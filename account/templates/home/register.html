@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ranzilia: Sign up</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="{% static 'home/css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/design.css' %}">
+</head>
+
+<body>
+    <section class="form-holder">
+        <div class="form">
+            <div class="inside">
+                <h2>Sign up</h2>
+                <form method="post">
+                    {% csrf_token %}
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname" required>
+                    </div><br>
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname" required>
+                    </div><br>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div><br>
+                    <div>
+                        <label for="gender">Gender</label>
+                        <select name="" id="">
+                        <option value="">Select your gender</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Others</option>
+                    </select>
+                    </div>
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" required>
+                    </div><br>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div><br>
+                    <div>
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password" required>
+                    </div><br>
+                    <div>
+                        <button type="submit">Register</button>
+                    </div>
+                    <div>
+                        <p>Already have an account
+                            <a href="{% url 'home:login' %}">login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <img class="image" src="{% static 'home/img/office.jpg' %}" alt="office item">
+        </div>
+    </section>
+
+</body>
+
+</html>

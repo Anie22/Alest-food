@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ranzilia: Log in</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/About.css">
+</head>
+
+<body>
+    <div class="main-siteheader-1">
+        <header class="siteheader-2">
+            <div class="innerheader-3">
+                <div class="siteNameContainer-4">
+                    <h2 id="siteNme-5">Alest Food</h2>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="page-holder">
+        <div class="container">
+            <div class="inner-contents">
+                <div class="login-picture-container">
+                    <div class="login-picture-box"></div>
+                </div>
+                <div class="form-section">
+                    <div class="inner-form-box">
+                        <h2 class="log-holder">Log in</h2>
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="input-text-holder">
+                                <label for="username"><p class="input-text">username</p></label>
+                                <input type="text" name="username" id="username" required>
+                            </div>
+                            <div>
+                                <label for="password"><p class="input-text">password</p></label>
+                                <input type="password" name="password" id="password" required>
+                            </div>
+                            <div class="auxiliary-holder">
+                                <div class="check-input">
+                                    <input type="checkbox" name="Remember me" id="Remember me" class="check"> Remember me
+                                </div>
+                                <div class="forgot-password-text">
+                                    <a class="password-text" href="">Forgot Password</a>
+                                </div>
+                            </div>
+                            <div class="login-button-container">
+                                <button type="submit">Login</button>
+                            </div>
+                            <div class="sign-container">
+                                <p>Don't have an account then <a class="signup" href="{% url 'accounts:register' %}">Sign up</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p class="copyright">
+        Alest © This website is design by <i class="fa fa-heart-o" aria-hidden="true"></i>Aniebiet Francis
+
+    </p>
+</body>
+
+</html>

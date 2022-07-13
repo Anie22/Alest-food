@@ -1,0 +1,69 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#page-body {
+    background: url(../img/Deep\ sea.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+#page-header {
+    text-align: center;
+    padding: 70px 0 60px 0;
+}
+
+#form-container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(32, 14, 61, 0.918);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="number"],
+select,
+textarea,
+input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    padding: 9px 12px;
+    border-radius: 4px;
+    outline: none;
+}
+
+label {
+    font-size: 18px;
+}
+
+.box {
+    margin-bottom: 20px;
+}
+
+.radio-input {
+    margin-top: 7px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: aquamarine;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+}

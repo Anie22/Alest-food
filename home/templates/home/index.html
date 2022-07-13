@@ -1,0 +1,484 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ranzilia: Home </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link rel="stylesheet" href="{% static 'home/css/font-awesome.min.css' %}">
+    <!-- <link rel="stylesheet" href="css/owl.carousel.css" type="text/css"> -->
+    <link href="{% static 'home/css/bootstrap.min.css' %}" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/animate.css' %}">
+    <!-- <link rel="stylesheet" href="css/A.bootstrap.min.css+template.css+fa.min.css+gfonts.min.css,Mcc.LI5f1xXhbm.css.pagespeed.cf.G00NPyYGCq.css"> -->
+
+</head>
+
+<body>
+    <div class="main-siteheader">
+        <header class="siteheader">
+            <div class="innerheader">
+                <div class="siteNameContainer">
+                    <h2 id="siteNme">Alest Food</h2>
+                </div>
+                <div class="user-panel">
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'accounts:logout' %}">logout</a> {% else %}
+                    <a href="{% url 'accounts:login' %}" class="button siteFeatureItem">log in</a> {% endif %}
+                </div>
+                <div>
+                    <form action="">
+                        <div class="header-search">
+                            <input type="search">
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="nav-holder">
+        <nav class="nav-section">
+            <div class="nav-switch">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="main-menu">
+                <li><a href="https://preview.colorlib.com/theme/foodblog/index.html">Home</a></li>
+                <li><a href="https://preview.colorlib.com/theme/foodblog/about.html">Features</a></li>
+                <li><a href="https://preview.colorlib.com/theme/foodblog/recipes.html">Receipies</a></li>
+                <li><a href="https://preview.colorlib.com/theme/foodblog/#">Reviews</a></li>
+                <li><a href="https://preview.colorlib.com/theme/foodblog/contact.html">Contact</a></li>
+            </ul>
+            <div class="header-social">
+                <a href="https://preview.colorlib.com/theme/foodblog/#"><i class="fa fa-facebook"></i></a>
+                <a href="https://preview.colorlib.com/theme/foodblog/#"><i class="fa fa-twitter"></i></a>
+                <a href="https://preview.colorlib.com/theme/foodblog/#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </nav>
+    </div>
+    <section>
+        <div class="outter-body-style">
+            <div class="inner-body-style">
+                <div class="hs-text">
+                    <h2 class="hs-title-1">
+                        <span>Healthy food</span>
+                    </h2>
+                    <h2 class="hs-title-2">
+                        <span>from the</span>
+                    </h2>
+                    <h2 class="hs-title-3">
+                        <span>best chef</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="add-section spad">
+        <div class="container">
+            <div class="add-warp">
+                <div class="add-slider owl-carousel owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-1528px, 0px, 0px); transition: all 0s ease 0s; width: 5348px;">
+                            <div class="owl-item cloned" style="width: 764px;">
+                                <div class="as-item set-bg" data-setbg="img/add/2.jpg" style="background-image: url(&quot;img/add/2.jpg&quot;);"></div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 764px;">
+                                <div class="as-item set-bg" data-setbg="img/add/3.jpg" style="background-image: url(&quot;img/add/3.jpg&quot;);"></div>
+                            </div>
+                            <div class="owl-item active" style="width: 764px;">
+                                <div class="as-item set-bg" data-setbg="img/add/1.jpg" style="background-image: url(&quot;img/add/1.jpg&quot;);"></div>
+                            </div>
+                            <div class="owl-item" style="width: 764px;">
+                                <div class="as-item set-bg" data-setbg="img/add/2.jpg" style="background-image: url(&quot;img/add/2.jpg&quot;);"></div>
+                            </div>
+                            <div class="owl-item" style="width: 764px;">
+                                <div class="as-item set-bg" data-setbg="img/add/3.jpg" style="background-image: url(&quot;img/add/3.jpg&quot;);"></div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 764px;">
+                                <div class="as-item set-bg" data-setbg="img/add/1.jpg" style="background-image: url(&quot;img/add/1.jpg&quot;);"></div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 764px;">
+                                <div class="as-item set-bg" data-setbg="img/add/2.jpg" style="background-image: url(&quot;img/add/2.jpg&quot;);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-nav disabled">
+                        <div class="owl-prev">prev</div>
+                        <div class="owl-next">next</div>
+                    </div>
+                    <div class="owl-dots disabled"></div>
+                </div>
+                <div class="row add-text-warp">
+                    <div class="col-lg-4 col-md-5 offset-lg-8 offset-md-7">
+                        <div class="add-text text-white">
+                            <div class="at-style"></div>
+                            <h2>Amazing deserts</h2>
+                            <ul>
+                                <li>Easy to make</li>
+                                <li>Step by Step Video Tutorial</li>
+                                <li>Gluten Free</li>
+                                <li>Healty Ingredients</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recipes-section spad pt-0">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest recipes</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="recipe">
+                        <img src="img/image 11.jpg" alt="" data-pagespeed-url-hash="803565950" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        <div class="recipe-info-warp">
+                            <div class="recipe-info">
+                                <h3>Traditional Pizza</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-md-6">
+                    <div class="recipe">
+                        <img src="img/image 2.jpg" alt="" data-pagespeed-url-hash="1098065871" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        <div class="recipe-info-warp">
+                            <div class="recipe-info">
+                                <h3>Italian home-made pasta</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="recipe">
+                        <img src="img/image 7.jpg" alt="" data-pagespeed-url-hash="1392565792" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        <div class="recipe-info-warp">
+                            <div class="recipe-info">
+                                <h3>Chesse Cake Tart</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="recipe">
+                        <img src="img/image 12.jpg" alt="" data-pagespeed-url-hash="1687065713" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        <div class="recipe-info-warp">
+                            <div class="recipe-info">
+                                <h3>Traditional Pizza</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="recipe">
+                        <img src="img/image 5.jpg" alt="" data-pagespeed-url-hash="1981565634" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        <div class="recipe-info-warp">
+                            <div class="recipe-info">
+                                <h3>Italian home-made pasta</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="recipe">
+                        <img src="img/image 6.jpg" alt="" data-pagespeed-url-hash="2276065555" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        <div class="recipe-info-warp">
+                            <div class="recipe-info">
+                                <h3>Chesse Cake Tart</h3>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bottom-widgets-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 ftw-warp">
+                    <div class="section-title">
+                        <h3>Top rated recipes</h3>
+                    </div>
+                    <ul class="sp-recipes-list">
+                        <li>
+                            <div class="rl-thumb set-bg" data-setbg="img/thumb/1.jpg" style="background-image: url(&quot;img/Airplane.jpg&quot;);"></div>
+                            <div class="rl-info">
+                                <span>March 14, 2018</span>
+                                <h6>Italian pasta</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rl-thumb set-bg" data-setbg="img/thumb/2.jpg" style="background-image: url(&quot;img/thumb/2.jpg&quot;);"></div>
+                            <div class="rl-info">
+                                <span>March 14, 2018</span>
+                                <h6>French Onion Soup</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rl-thumb set-bg" data-setbg="img/thumb/3.jpg" style="background-image: url(&quot;img/thumb/3.jpg&quot;);"></div>
+                            <div class="rl-info">
+                                <span>March 14, 2018</span>
+                                <h6>Homemade pasta</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rl-thumb set-bg" data-setbg="img/thumb/4.jpg" style="background-image: url(&quot;img/thumb/4.jpg&quot;);"></div>
+                            <div class="rl-info">
+                                <span>March 14, 2018</span>
+                                <h6>Onion Soup Gratinee</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rl-thumb set-bg" data-setbg="img/thumb/4.jpg" style="background-image: url(&quot;img/thumb/4.jpg&quot;);"></div>
+                            <div class="rl-info">
+                                <span>March 14, 2018</span>
+                                <h6>Feta Cheese Burgers</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 ftw-warp">
+                    <div class="section-title">
+                        <h3>Most liked recipes</h3>
+                    </div>
+                    <ul class="sp-recipes-list">
+                        <li>
+                            <div class="rl-thumb set-bg" data-setbg="img/thumb/6.jpg" style="background-image: url(&quot;img/thumb/6.jpg&quot;);"></div>
+                            <div class="rl-info">
+                                <span>March 14, 2018</span>
+                                <h6>Traditional Food</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rl-thumb set-bg" data-setbg="img/thumb/7.jpg" style="background-image: url(&quot;img/thumb/7.jpg&quot;);"></div>
+                            <div class="rl-info">
+                                <span>March 14, 2018</span>
+                                <h6>Baked Salmon</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rl-thumb set-bg" data-setbg="img/thumb/8.jpg" style="background-image: url(&quot;img/thumb/8.jpg&quot;);"></div>
+                            <div class="rl-info">
+                                <span>March 14, 2018</span>
+                                <h6>Deep Fried Fish</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rl-thumb set-bg" data-setbg="img/thumb/9.jpg" style="background-image: url(&quot;img/thumb/9.jpg&quot;);"></div>
+                            <div class="rl-info">
+                                <span>March 14, 2018</span>
+                                <h6>Raw Tomato Soup</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rl-thumb set-bg" data-setbg="img/thumb/10.jpg" style="background-image: url(&quot;img/thumb/10.jpg&quot;);"></div>
+                            <div class="rl-info">
+                                <span>March 14, 2018</span>
+                                <h6>Vegan Food</h6>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sp-blog-item">
+                        <div class="blog-thubm">
+                            <img src="./1(1).jpg" alt="" data-pagespeed-url-hash="3346852763" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <div class="blog-date">
+                                <span>May 04, 2018</span>
+                            </div>
+                        </div>
+                        <div class="blog-text">
+                            <h5>Italian restaurant Review</h5>
+                            <span>By Maria Williams</span>
+                            <p>Donec quam felis, ultricies nec, pellente sque eu, pretium quis, sem. Nulla conseq uat massa quis enim. </p>
+                            <a href="https://preview.colorlib.com/theme/foodblog/#" class="comment">2 Comments</a>
+                            <a href="https://preview.colorlib.com/theme/foodblog/#" class="readmore"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 offset-lg-0 offset-md-2">
+                    <div class="review-item">
+                        <div class="review-thumb set-bg" data-setbg="img/thumb/11.jpg" style="background-image: url(&quot;img/thumb/11.jpg&quot;);">
+                            <div class="review-date">
+                                <span>May 04, 2018</span>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <span>March 14, 2018</span>
+                            <h6>Feta Cheese Burgers</h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star is-fade"></i>
+                            </div>
+                            <div class="author-meta">
+                                <div class="author-pic set-bg" data-setbg="img/author.jpg" style="background-image: url(&quot;img/author.jpg&quot;);"></div>
+                                <p>By Janice Smith</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8 offset-lg-0 offset-md-2">
+                    <div class="review-item">
+                        <div class="review-thumb set-bg" data-setbg="img/thumb/12.jpg" style="background-image: url(&quot;img/thumb/12.jpg&quot;);">
+                            <div class="review-date">
+                                <span>May 04, 2018</span>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <span>March 14, 2018</span>
+                            <h6>Mozarella Pasta</h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star is-fade"></i>
+                            </div>
+                            <div class="author-meta">
+                                <div class="author-pic set-bg" data-setbg="img/author.jpg" style="background-image: url(&quot;img/author.jpg&quot;);"></div>
+                                <p>By Janice Smith</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
